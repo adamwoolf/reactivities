@@ -57,7 +57,7 @@ return activities;
                 activity.date = activity.date.split('.')[0];
                 this.activityRegistry.set(activity.id, activity);
               });
-              console.log(this.groupActivitiesByDate(activities));
+            //   console.log(this.groupActivitiesByDate(activities));
               
               this.loadingInitial = false;
         } catch (error) {
@@ -83,6 +83,7 @@ return activities;
                 
             } catch (error) {
                 console.log(error);
+                
             }
             // this.loadingInitial = false;
 
